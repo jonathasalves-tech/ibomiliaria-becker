@@ -13,12 +13,25 @@
     </header>
 
     <main class="container">
-        <section class="filtro">
-            <input type="text" id="campo-busca" placeholder="Buscar por título ou descrição...">
+        <section class="painel-filtros">
+            <input type="text" id="campo-busca" placeholder="Buscar por nome...">
+            
+            <select id="filtro-quartos">
+                <option value="">Todos os quartos</option>
+                <option value="2">2+ Quartos</option>
+                <option value="3">3+ Quartos</option>
+                <option value="4">4+ Quartos</option>
+            </select>
+
+            <select id="filtro-preco">
+                <option value="">Qualquer preço</option>
+                <option value="500000">Até R$ 500.000</option>
+                <option value="1000000">Até R$ 1.000.000</option>
+                <option value="2000000">Até R$ 2.000.000</option>
+            </select>
         </section>
 
-        <section id="lista-casas" class="grid-casas">
-            </section>
+        <section id="lista-casas" class="grid-casas"></section>
     </main>
 
     <script src="script.js"></script>
